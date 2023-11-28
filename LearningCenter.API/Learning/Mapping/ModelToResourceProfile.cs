@@ -1,0 +1,16 @@
+using AutoMapper;
+using LearningCenter.API.Learning.Domain.Models;
+using LearningCenter.API.Learning.Domain.Models.Aggregates;
+using LearningCenter.API.Learning.Domain.Models.Entities;
+using LearningCenter.API.Learning.Resources;
+
+namespace LearningCenter.API.Learning.Mapping;
+
+public class ModelToResourceProfile : Profile
+{
+    public ModelToResourceProfile()
+    {
+        CreateMap<Category, CategoryResource>();
+        CreateMap<Tutorial, TutorialResource>();
+    }
+}
